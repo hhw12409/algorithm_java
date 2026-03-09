@@ -9,7 +9,7 @@ public class Quiz1 {
     for (int i = 0; i < prices.length; i++) {
       for (int j = i + 1; j < prices.length; j++) {
         if (prices[i] + prices[j] == target) {
-          answer += 1;
+          answer++;
         }
       }
     }
@@ -42,7 +42,7 @@ public class Quiz1 {
     for (int price : prices) {
       int complement = target - price;
       if (priceSet.contains(complement)) {
-        answer += 1;
+        answer++;
       }
       priceSet.add(price);
     }
