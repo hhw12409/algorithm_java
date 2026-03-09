@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Quiz1 {
 
+  // O(n^2) 시간 복잡도를 가지는 솔루션
   public int solution(int[] prices, int target) {
     int answer = 0;
     for (int i = 0; i < prices.length; i++) {
@@ -16,6 +17,7 @@ public class Quiz1 {
     return answer;
   }
 
+  // O(n log n) 시간 복잡도를 가지는 솔루션
   public int solution2(int[] prices, int target) {
     int answer = 0;
     Arrays.sort(prices);
@@ -36,7 +38,8 @@ public class Quiz1 {
     return answer;
   }
 
-  public int solution3(int[] prices, int target) {
+  // O(n) 시간 복잡도를 가지는 솔루션
+  public int solution3(int[] prices, int target) { 
     int answer = 0;
     Set<Integer> priceSet = new HashSet<>();
     for (int price : prices) {
