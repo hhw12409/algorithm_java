@@ -49,6 +49,17 @@ public class Quiz2 {
     return stack.isEmpty() ? answer : -1;
   }
   public static void main(String[] args) {
-    
+    Quiz2 quiz = new Quiz2();
+
+    // solution: 소괄호쌍
+    System.out.println(quiz.solution("(())"));   // 2
+    System.out.println(quiz.solution("(()())"));  // 3
+    System.out.println(quiz.solution(")("));      // -1
+    System.out.println(quiz.solution("(()"));     // -1
+
+    // solution2: 괄호쌍
+    System.out.println(quiz.solution2("{[()]}"));  // 3
+    System.out.println(quiz.solution2("([)]"));    // -1
+    System.out.println(quiz.solution2("{[]}()"));  // 3
   }
 }
