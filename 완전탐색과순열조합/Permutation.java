@@ -2,6 +2,7 @@ package 완전탐색과순열조합;
 
 import java.util.*;
 
+// 순열 (요소의 순서가 중요)
 public class Permutation {
   public List<List<Integer>> solution(int[] nums, int m) {
     return dfs(nums, m, new ArrayList<>(), new boolean[nums.length]);

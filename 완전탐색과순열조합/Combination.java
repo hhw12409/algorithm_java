@@ -2,7 +2,7 @@ package 완전탐색과순열조합;
 
 import java.util.*;
 
-// 조합
+// 조합 (선택됙 요소들의 구성만 중요 순서는 고려하지 않음)
 public class Combination {
   List<List<Integer>> combination(int[] nums, int m) {
     return dfs(nums, m, 0, new ArrayList<>());

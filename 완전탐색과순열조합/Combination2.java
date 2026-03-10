@@ -43,5 +43,6 @@ public class Combination2 {
   public static void main(String[] args) {
     Combination2 combination2 = new Combination2();
     System.out.println(combination2.combination(new int[]{1, 2, 3, 4}, 4));
+    System.out.println(combination2.subset(new int[]{1, 2, 3, 4}));
   }
 }
