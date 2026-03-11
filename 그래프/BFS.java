@@ -2,6 +2,7 @@ package 그래프;
 
 import java.util.*;
 
+// O(V + E)
 public class BFS {
   public void solution(List<List<Integer>> graph) {
     boolean[] visited = new boolean[graph.size()];
